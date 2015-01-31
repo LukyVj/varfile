@@ -1,0 +1,1 @@
+BODY.style.background = COLOR
