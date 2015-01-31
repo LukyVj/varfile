@@ -1,8 +1,6 @@
 # varfile
 
-### Usage
-
-#### settings 
+### Settings 
 ##### In varfile :
 Demo purpose.
 ```javascript
@@ -36,8 +34,9 @@ var VARFILE = 'scripts/varfile';
 BODY.style.background = COLOR
 ```
 
-##### Basic 
+##### Basic (main.js) : 
 ```javascript
+/* load the import function here */
 _import_varfile_config(true, false, function () {
   _import(VARFILE, false, function(){ 
     _import_script('app.js', false, function(){})
@@ -45,8 +44,9 @@ _import_varfile_config(true, false, function () {
 }); 
 ```
 
-##### Debug
+##### Debug (main.js) :
 ```javascript
+/* load the import function here */
 _import_varfile_config(true, true, function () {
   _import(VARFILE, true, function(){ 
     _import_script('app.js', true, function(){})
