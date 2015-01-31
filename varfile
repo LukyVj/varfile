@@ -1,0 +1,23 @@
+/*! VARFILE */
+
+//# ELEMENTS
+//# COLORS / STYLES
+//# CONFIG PROPERTIES
+
+var
+
+//# ELEMENT
+BODY    = document.getElementById('body'),
+
+
+//# COLORS / STYLES
+COLOR   = 'red',
+
+//# CONFIG PROPERTIES
+SCROLL  = false,
+SPEED   = 1
+
+//# END
+
+NUMALLVAR = 0;
+;
