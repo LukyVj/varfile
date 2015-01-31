@@ -2,7 +2,41 @@
 
 ### Usage
 
-#### Basic 
+#### settings 
+##### In varfile :
+Demo purpose.
+```javascript
+/*! VARFILE */
+
+//# ELEMENTS
+//# COLORS / STYLES
+//# CONFIG PROPERTIES
+
+var
+//# ELEMENT
+BODY    = document.getElementById('body'),
+
+//# COLORS / STYLES
+COLOR   = 'red',
+
+//# CONFIG PROPERTIES
+SCROLL  = false,
+SPEED   = 1;
+
+//# END
+```
+
+##### In varfile.config : 
+```javascript
+var VARFILE = 'scripts/varfile';
+```
+
+##### In app.js : 
+```javascript
+BODY.style.background = COLOR
+```
+
+##### Basic 
 ```javascript
 _import_varfile_config(true, false, function () {
   _import(VARFILE, false, function(){ 
@@ -11,7 +45,7 @@ _import_varfile_config(true, false, function () {
 }); 
 ```
 
-#### Debug
+##### Debug
 ```javascript
 _import_varfile_config(true, true, function () {
   _import(VARFILE, true, function(){ 
